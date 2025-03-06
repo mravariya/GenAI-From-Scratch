@@ -1,8 +1,8 @@
 from datasets import load_dataset
-import typing
+import typing as tp
 
 
-def load_bookcorps_data(n: int = 1_000_000) -> typing.List[str]:
+def load_bookcorps_data(n: int = 1_000_000) -> tp.List[str]:
     """
     Load the BookCorpus dataset from Hugging Face Datasets.
     The BookCorpus dataset contains a large collection of books.
@@ -24,3 +24,5 @@ def load_bookcorps_data(n: int = 1_000_000) -> typing.List[str]:
 if __name__ == "__main__":
     data = load_bookcorps_data()
     print(data[:5])
+    print(len(data))
+    print("load_bookcorps_data() is working correctly.")
